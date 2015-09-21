@@ -1,6 +1,6 @@
 {
     "name": "subclass",
-    "version": "0.0.0",
+    "version": "1.0.3",
     "description": "Inherit, extend, decorate, and override classes and instances.",
     "homepage": "https://github.com/JamieMason/subclass.js",
     "license": "MIT",
