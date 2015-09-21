@@ -1,0 +1,24 @@
+{
+    "preset": "default",
+    "plugins": [
+        "esformatter-braces",
+        "esformatter-dot-notation",
+        "esformatter-parseint",
+        "esformatter-quotes",
+        "esformatter-remove-trailing-commas",
+        "esformatter-semicolons",
+        "esformatter-var-each"
+    ],
+    "indent": {
+        "value": "    "
+    },
+    "lineBreak": {
+        "before": {
+            "EndOfFile": 1
+        }
+    },
+    "quotes": {
+        "avoidEscape": false,
+        "type": "single"
+    }
+}
