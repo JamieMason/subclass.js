@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2017"],
+    "outDir": "./dist",
+    "strict": false,
+    "target": "es5"
+  },
+  "include": ["src/index.ts"],
+  "exclude": []
+}

@@ -1,47 +1,41 @@
 {
-    "name": "subclass",
-    "version": "1.0.3",
-    "description": "Inherit, extend, decorate, and override classes and instances.",
-    "homepage": "https://github.com/JamieMason/subclass.js",
-    "license": "MIT",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/JamieMason/subclass.js.git"
-    },
-    "keywords": [
-        "decorate",
-        "decorator",
-        "extend",
-        "extendable",
-        "inherit",
-        "inheritance",
-        "mixin",
-        "prototypal",
-        "prototype",
-        "statics",
-        "subclass"
-    ],
-    "authors": [
-        "Jamie Mason (@fold_left)"
-    ],
-    "bugs": {
-        "url": "https://github.com/JamieMason/subclass.js/issues"
-    },
-    "devDependencies": {
-        "esformatter": "0.7.3",
-        "esformatter-braces": "1.2.1",
-        "esformatter-dot-notation": "1.3.1",
-        "esformatter-parseint": "1.0.3",
-        "esformatter-quotes": "1.0.3",
-        "esformatter-remove-trailing-commas": "1.0.1",
-        "esformatter-semicolons": "1.1.1",
-        "esformatter-use-strict": "2.0.2",
-        "esformatter-var-each": "2.1.0",
-        "eslint": "1.4.3"
-    },
-    "scripts": {
-        "formatter": "node_modules/esformatter/bin/esformatter -i 'index.js'",
-        "linter": "node_modules/eslint/bin/eslint.js --config .eslintrc 'index.js'"
-    }
+  "name": "subclass",
+  "description": "Inherit, extend, decorate, and override classes and instances.",
+  "version": "1.0.3",
+  "author": "Jamie Mason (https://github.com/JamieMason)",
+  "bugs": "https://github.com/JamieMason/subclass.js/issues",
+  "devDependencies": {
+    "prettier": "1.18.2",
+    "rimraf": "2.6.3",
+    "tslint": "5.17.0",
+    "typescript": "3.5.2"
+  },
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://github.com/JamieMason/subclass.js",
+  "keywords": [
+    "decorate",
+    "decorator",
+    "extend",
+    "extendable",
+    "inherit",
+    "inheritance",
+    "mixin",
+    "prototypal",
+    "prototype",
+    "statics",
+    "subclass"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "JamieMason/subclass.js",
+  "scripts": {
+    "build": "tsc --project .",
+    "format": "prettier --write 'README.md' './src/**/*.{ts}'",
+    "lint": "tslint --fix --project ./tsconfig.json",
+    "prebuild": "rimraf dist",
+    "prelint": "npm run format",
+    "prepack": "npm run build"
+  }
 }
