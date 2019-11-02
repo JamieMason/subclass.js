@@ -38,7 +38,7 @@
         "esformatter-semicolons": "1.1.1",
         "esformatter-use-strict": "2.0.2",
         "esformatter-var-each": "2.1.0",
-        "eslint": "1.4.3"
+        "eslint": "6.6.0"
     },
     "scripts": {
         "formatter": "node_modules/esformatter/bin/esformatter -i 'index.js'",
